@@ -1,0 +1,130 @@
+body {
+  margin-top: 2%;
+  background-color: rgb(68, 66, 66);
+}
+video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  top: 0px;
+  left: 0px;
+}
+#hit {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+canvas {
+  display: none;
+}
+.buttons{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#snaps{
+    display: none;
+}
+#snapss{
+    display: none;
+}
+#email, #emailbutton{
+    display: none;
+}
+#downloadimage{
+  display:none;
+}
+.design.active{
+    border: 5px dashed #000;
+  }
+.capturebutton {
+  background-color: #29292b; /* Green */
+  border: none;
+  color: white;
+  padding: 0.7em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media only screen and (max-width: 600px) {
+  #fg,
+  canvas {
+    width: 300px;
+    height: 300px;
+  }
+  #hit,
+  .buttons,
+  .designs {
+    margin-left: 4%;
+  }
+  .designs{
+    margin-top: 2%;
+  }
+  .design {
+    width: 89px;
+    height: 64px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #fg,
+  canvas {
+    width: 400px;
+    height: 400px;
+  }
+  .design {
+    width: 117px;
+    height: 91px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #fg,
+  canvas {
+    width: 600px;
+    height: 600px;
+  }
+  .design {
+    width: 154px;
+    height: 154px;
+  }
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #8d93ab;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
